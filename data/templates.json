@@ -1,0 +1,109 @@
+{
+  "source": "CommonPaper",
+  "source_url": "https://github.com/CommonPaper",
+  "license": "CC BY 4.0",
+  "downloaded": "2026-03-12",
+  "description": "Open-source legal agreement templates from CommonPaper, drafted by committees of attorneys and free to copy and modify.",
+  "templates": [
+    {
+      "id": "software-license-agreement",
+      "name": "Software License Agreement",
+      "abbreviation": "SLA",
+      "filename": "Software-License-Agreement.md",
+      "repository": "https://github.com/CommonPaper/Software-License-Agreement",
+      "raw_url": "https://raw.githubusercontent.com/CommonPaper/Software-License-Agreement/main/Software-License-Agreement.md",
+      "description": "A standard software license agreement for licensing software to customers."
+    },
+    {
+      "id": "mutual-nda",
+      "name": "Mutual Non-Disclosure Agreement",
+      "abbreviation": "NDA",
+      "filename": "Mutual-NDA.md",
+      "coverpage_filename": "Mutual-NDA-coverpage.md",
+      "repository": "https://github.com/CommonPaper/Mutual-NDA",
+      "raw_url": "https://raw.githubusercontent.com/CommonPaper/Mutual-NDA/main/Mutual-NDA.md",
+      "description": "A mutual non-disclosure agreement for protecting confidential information shared between two parties."
+    },
+    {
+      "id": "csa",
+      "name": "Cloud Service Agreement",
+      "abbreviation": "CSA",
+      "filename": "CSA.md",
+      "repository": "https://github.com/CommonPaper/CSA",
+      "raw_url": "https://raw.githubusercontent.com/CommonPaper/CSA/main/CSA.md",
+      "description": "A cloud service agreement for SaaS and cloud-hosted software products."
+    },
+    {
+      "id": "dpa",
+      "name": "Data Processing Agreement",
+      "abbreviation": "DPA",
+      "filename": "DPA.md",
+      "repository": "https://github.com/CommonPaper/DPA",
+      "raw_url": "https://raw.githubusercontent.com/CommonPaper/DPA/main/DPA.md",
+      "description": "A data processing agreement for GDPR and privacy compliance between data controllers and processors."
+    },
+    {
+      "id": "sla",
+      "name": "Service Level Agreement",
+      "abbreviation": "SLA",
+      "filename": "SLA.md",
+      "repository": "https://github.com/CommonPaper/SLA",
+      "raw_url": "https://raw.githubusercontent.com/CommonPaper/SLA/main/sla.md",
+      "description": "A service level agreement defining uptime commitments and remedies for cloud services."
+    },
+    {
+      "id": "psa",
+      "name": "Professional Services Agreement",
+      "abbreviation": "PSA",
+      "filename": "PSA.md",
+      "repository": "https://github.com/CommonPaper/PSA",
+      "raw_url": "https://raw.githubusercontent.com/CommonPaper/PSA/main/psa.md",
+      "description": "A professional services agreement for engagements involving consulting, implementation, or custom development."
+    },
+    {
+      "id": "design-partner-agreement",
+      "name": "Design Partner Agreement",
+      "abbreviation": "DPA",
+      "filename": "Design-Partner-Agreement.md",
+      "repository": "https://github.com/CommonPaper/Design-Partner-Agreement",
+      "raw_url": "https://raw.githubusercontent.com/CommonPaper/Design-Partner-Agreement/main/design-partner-agreement.md",
+      "description": "An agreement for early-stage design partner relationships, typically used for beta products."
+    },
+    {
+      "id": "ai-addendum",
+      "name": "AI Addendum",
+      "abbreviation": "AI",
+      "filename": "AI-Addendum.md",
+      "repository": "https://github.com/CommonPaper/AI-Addendum",
+      "raw_url": "https://raw.githubusercontent.com/CommonPaper/AI-Addendum/main/AI-Addendum.md",
+      "description": "An addendum to existing agreements covering the use of AI features, data handling, and model training restrictions."
+    },
+    {
+      "id": "pilot-agreement",
+      "name": "Pilot Agreement",
+      "abbreviation": "PA",
+      "filename": "Pilot-Agreement.md",
+      "repository": "https://github.com/CommonPaper/Pilot-Agreement",
+      "raw_url": "https://raw.githubusercontent.com/CommonPaper/Pilot-Agreement/main/Pilot-Agreement.md",
+      "description": "A pilot agreement for limited-scope, time-bound evaluations of software or services."
+    },
+    {
+      "id": "partnership-agreement",
+      "name": "Partnership Agreement",
+      "abbreviation": "PA",
+      "filename": "Partnership-Agreement.md",
+      "repository": "https://github.com/CommonPaper/Partnership-Agreement",
+      "raw_url": "https://raw.githubusercontent.com/CommonPaper/Partnership-Agreement/main/Partnership-Agreement.md",
+      "description": "A partnership agreement for reseller, referral, or technology partner relationships."
+    },
+    {
+      "id": "baa",
+      "name": "Business Associate Agreement",
+      "abbreviation": "BAA",
+      "filename": "BAA.md",
+      "repository": "https://github.com/CommonPaper/BAA",
+      "raw_url": "https://raw.githubusercontent.com/CommonPaper/BAA/main/BAA.md",
+      "description": "A business associate agreement for HIPAA compliance when handling protected health information."
+    }
+  ]
+}
