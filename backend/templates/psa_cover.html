@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Professional Services Agreement — Cover Page</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 1in 1in 0.9in 1in;
+    }
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 11pt;
+      line-height: 1.5;
+      color: #000;
+    }
+    h1 {
+      text-align: center;
+      font-size: 17pt;
+      font-weight: bold;
+      margin-bottom: 4px;
+      letter-spacing: 0.5px;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 10pt;
+      color: #444;
+      margin-bottom: 28px;
+      font-style: italic;
+    }
+    .section-title {
+      font-size: 12pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1.5px solid #000;
+      padding-bottom: 3px;
+      margin-top: 22px;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 14px;
+      font-size: 10.5pt;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+      padding: 5px 8px;
+      font-weight: bold;
+      width: 32%;
+      border: 1px solid #bbb;
+      vertical-align: top;
+    }
+    td {
+      padding: 5px 8px;
+      border: 1px solid #bbb;
+      vertical-align: top;
+    }
+    .sig-table th {
+      background-color: #e8e8e8;
+      text-align: center;
+      font-size: 10pt;
+    }
+    .sig-table td {
+      height: 52px;
+    }
+    .intro-text {
+      font-size: 10pt;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    .footer {
+      margin-top: 28px;
+      font-size: 8.5pt;
+      color: #666;
+      border-top: 1px solid #bbb;
+      padding-top: 7px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Professional Services Agreement</h1>
+  <p class="subtitle">Cover Page &mdash; Key Terms &amp; Statement of Work</p>
+
+  <p class="intro-text">
+    This Cover Page, together with the Common Paper Professional Services Agreement Standard Terms
+    (Version 1.0), forms the entire agreement between <strong>{{ kt.customer }}</strong>
+    ("<strong>Customer</strong>") and <strong>{{ kt.provider }}</strong> ("<strong>Provider</strong>").
+  </p>
+
+  <!-- KEY TERMS -->
+  <div class="section-title">Key Terms</div>
+  <table>
+    <tr><th>Customer</th><td>{{ kt.customer }}</td></tr>
+    <tr><th>Provider</th><td>{{ kt.provider }}</td></tr>
+    <tr><th>Effective Date</th><td>{{ kt.effective_date }}</td></tr>
+    <tr><th>SOW Term</th><td>{{ kt.sow_term }}</td></tr>
+    <tr><th>Governing Law</th><td>{{ kt.governing_law }}</td></tr>
+    <tr><th>Chosen Courts</th><td>{{ kt.chosen_courts }}</td></tr>
+    <tr><th>General Cap Amount</th><td>{{ kt.general_cap_amount }}</td></tr>
+    <tr><th>Provider Covered Claims</th><td>{{ kt.provider_covered_claims }}</td></tr>
+    <tr><th>Customer Covered Claims</th><td>{{ kt.customer_covered_claims }}</td></tr>
+    {% if kt.customer_policies %}
+    <tr><th>Customer Policies</th><td>{{ kt.customer_policies }}</td></tr>
+    {% endif %}
+    {% if kt.security_policy %}
+    <tr><th>Security Policy</th><td>{{ kt.security_policy }}</td></tr>
+    {% endif %}
+    {% if kt.dpa %}
+    <tr><th>DPA</th><td>{{ kt.dpa }}</td></tr>
+    {% endif %}
+    {% if kt.additional_warranties %}
+    <tr><th>Additional Warranties</th><td>{{ kt.additional_warranties }}</td></tr>
+    {% endif %}
+    {% if kt.increased_claims %}
+    <tr><th>Increased Claims</th><td>{{ kt.increased_claims }}</td></tr>
+    {% endif %}
+    {% if kt.increased_cap_amount %}
+    <tr><th>Increased Cap Amount</th><td>{{ kt.increased_cap_amount }}</td></tr>
+    {% endif %}
+    {% if kt.unlimited_claims %}
+    <tr><th>Unlimited Claims</th><td>{{ kt.unlimited_claims }}</td></tr>
+    {% endif %}
+    {% if kt.insurance_minimums %}
+    <tr><th>Insurance Minimums</th><td>{{ kt.insurance_minimums }}</td></tr>
+    {% endif %}
+  </table>
+
+  <!-- STATEMENT OF WORK -->
+  <div class="section-title">Statement of Work (SOW)</div>
+  <table>
+    <tr><th>Deliverables</th><td>{{ sow.deliverables }}</td></tr>
+    <tr><th>Fees</th><td>{{ sow.fees }}</td></tr>
+    <tr><th>Payment Period</th><td>{{ sow.payment_period }}</td></tr>
+    <tr><th>Time of Assignment</th><td>{{ sow.time_of_assignment }}</td></tr>
+    {% if sow.rejection_period %}
+    <tr><th>Rejection Period</th><td>{{ sow.rejection_period }}</td></tr>
+    {% endif %}
+    {% if sow.resubmission_period %}
+    <tr><th>Resubmission Period</th><td>{{ sow.resubmission_period }}</td></tr>
+    {% endif %}
+    {% if sow.customer_obligations %}
+    <tr><th>Customer Obligations</th><td>{{ sow.customer_obligations }}</td></tr>
+    {% endif %}
+  </table>
+
+  <!-- SIGNATURES -->
+  <div class="section-title">Signatures</div>
+  <p class="intro-text">
+    By signing below, each party agrees to be bound by this Professional Services Agreement
+    as of the Effective Date listed above.
+  </p>
+  <table class="sig-table">
+    <tr>
+      <th style="width:20%;"></th>
+      <th style="width:40%;">Customer: {{ kt.customer }}</th>
+      <th style="width:40%;">Provider: {{ kt.provider }}</th>
+    </tr>
+    <tr>
+      <th>Signature</th>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Print Name</th>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Notice Address</th>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <div class="footer">
+    Common Paper Professional Services Agreement (Version 1.0) &mdash; free to use under
+    <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+    This Cover Page must be read alongside the Standard Terms available at commonpaper.com.
+  </div>
+
+</body>
+</html>
